@@ -1,6 +1,43 @@
 // @import 'yoga';
 // @import 'normalize';
 
-// $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
-// @import 'font-awesome';
+$fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
+@import 'font-awesome';
 @import 'box-sizing';
+
+// colors
+$c-black: #000;
+$c-white: #fff;
+$c-head: 'Rye', cursive;
+
+html {
+  border: 3px dashed gold;
+  height: 100vh;
+}
+
+body {
+  background: $c-black;
+  color: $c-white;
+  display: flex;
+  justify-content: center;
+}
+
+.bang {
+  font-family: $c-head;
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgb(198,198,198);
+  position: relative;
+}
+
+.key-box {
+  position: absolute;
+  top: 10rem;
+  display: flex;
+}
+
+.key {
+  border: 1px solid $c-white;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  font-size: 4rem;
+}
